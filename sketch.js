@@ -11,8 +11,8 @@ function setup() {
 
   // ENTER triggers chatbot
   inputBox.changed(() => {
-    userMessage = inputBox.value();
-    botResponse = getBotReply(userMessage);
+    userResponse = inputBox.value();
+    botResponse = getBotReply(userResponse);
     inputBox.value("");
   });
 }

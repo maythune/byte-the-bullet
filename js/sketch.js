@@ -3,10 +3,10 @@ let botResponse = "";
 let inputBox;
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(1500, 1000);
 
   inputBox = createInput();
-  inputBox.position(100, 350);
+  inputBox.position(100, 800);
   inputBox.size(700);
 
   // ENTER triggers chatbot
@@ -25,8 +25,8 @@ function draw() {
   text("Chatbot Demo", 400, 40);
 
   textSize(16);
-  text("You: " + userResponse, 100, 100);
-  text("Bot: " + botResponse, 100, 140);
+  text("You: " + userResponse, 100, 100, 1000);
+  text("Bot: " + botResponse, 100, 140, 1000);
 }
 
 function getBotReply(msg) {
@@ -50,3 +50,4 @@ function getBotReply(msg) {
 
   return "I didn't understand that. Try saying 'hello' or 'help'.";
 }
+

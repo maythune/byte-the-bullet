@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Replace with the URL you want to scrape
-TARGET_URL = 'https://www.example.com' 
+TARGET_URL = 'https://www.healthline.com','https://www.nutrition.gov'#for nutrition meals and their recipes
 
 def scrape_data(url):
     """Fetches the HTML and extracts a specific element."""
@@ -28,4 +28,5 @@ def scrape_data(url):
 
 # Example test run (you can comment this out later)
 # if name == "main":
+
 #     print(scrape_data(TARGET_URL))

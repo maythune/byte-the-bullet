@@ -1,0 +1,143 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Thank user
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Answer diabetes questions
+  steps:
+  - intent: ask_diabetes
+  - action: utter_ask_diabetes
+
+- rule: Answer hypoglycemia questions
+  steps:
+  - intent: ask_hypoglycemia
+  - action: utter_ask_hypoglycemia
+
+- rule: Answer general carbohydrate questions
+  steps:
+  - intent: ask_carbohydrates
+  - action: utter_ask_carbohydrates
+
+- rule: Answer healthy carbs questions
+  steps:
+  - intent: ask_healthy_carbs
+  - action: utter_ask_healthy_carbs
+
+- rule: Answer unhealthy carbs questions
+  steps:
+  - intent: ask_unhealthy_carbs
+  - action: utter_ask_unhealthy_carbs
+
+- rule: Provide tips for adding healthy carbs
+  steps:
+  - intent: ask_add_healthy_carbs
+  - action: utter_ask_add_healthy_carbs
+
+- rule: Answer diet questions
+  steps:
+  - intent: ask_diet
+  - action: utter_ask_diet
+
+- rule: Explain healthy eating plate
+  steps:
+  - intent: ask_healthy_eating_plate
+  - action: utter_ask_healthy_eating_plate
+
+- rule: Answer diet portion questions
+  steps:
+  - intent: ask_diet_portions
+  - action: utter_ask_diet_portions
+
+- rule: Explain why diets fail
+  steps:
+  - intent: ask_why_diets_fail
+  - action: utter_ask_why_diets_fail
+
+- rule: List types of diets
+  steps:
+  - intent: ask_types_of_diets
+  - action: utter_ask_types_of_diets
+
+- rule: Answer protein questions
+  steps:
+  - intent: ask_protein
+  - action: utter_ask_protein
+
+- rule: Answer protein needs questions
+  steps:
+  - intent: ask_protein_needs
+  - action: utter_ask_protein_needs
+
+- rule: Debunk carbs myth
+  steps:
+  - intent: debunk_carbs_myth
+  - action: utter_debunk_carbs_myth
+
+- rule: Debunk detox myth
+  steps:
+  - intent: debunk_detox_myth
+  - action: utter_debunk_detox_myth
+
+- rule: Debunk fat myth
+  steps:
+  - intent: debunk_fat_myth
+  - action: utter_debunk_fat_myth
+
+- rule: Debunk breakfast myth
+  steps:
+  - intent: debunk_breakfast_myth
+  - action: utter_debunk_breakfast_myth
+
+- rule: Debunk protein myth
+  steps:
+  - intent: debunk_protein_myth
+  - action: utter_debunk_protein_myth
+
+- rule: Debunk sugar myth
+  steps:
+  - intent: debunk_sugar_myth
+  - action: utter_debunk_sugar_myth
+
+- rule: Debunk organic myth
+  steps:
+  - intent: debunk_organic_myth
+  - action: utter_debunk_organic_myth
+
+- rule: Provide weight loss advice
+  steps:
+  - intent: ask_weight_loss
+  - action: utter_ask_weight_loss
+
+- rule: Answer supplement questions
+  steps:
+  - intent: ask_supplements
+  - action: utter_ask_supplements
+
+- rule: Help with meal planning
+  steps:
+  - intent: ask_meal_planning
+  - action: utter_ask_meal_planning
+  
+- rule: Multi-topic nutrition response
+  steps:
+  - intent: multi_nutrition
+  - action: utter_multi_nutrition
+
+- rule: Default fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
